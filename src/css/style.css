@@ -1,0 +1,262 @@
+/* color:#072525 */
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+/* //////////////////////////////
+///// General
+////////////////////////////// */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    height: 100rem;
+}
+
+/* Page Context */
+
+.pushable:not(body) {
+    transform: none;
+}
+
+/* //////////////////////////////
+///// Header
+////////////////////////////// */
+
+.pushable:not(body)>.ui.sidebar,
+.pushable:not(body)>.fixed,
+.pushable:not(body)>.pusher:after {
+    position: fixed;
+    margin-top: 6.1rem !important;
+}
+
+.wrapper_images {
+    height: 70rem;
+    overflow: hidden;
+}
+
+.rental_name {
+    background: linear-gradient(to right, #870000, #190a05) !important;
+}
+
+.item_img {
+    background-size: cover !important;
+    background-position: bottom !important;
+}
+
+.header_main {
+    position: absolute;
+    font-size: 4.5rem !important;
+    font-weight: 300 !important;
+}
+
+.header_main span {
+    display: block;
+    font-size: 2.5rem;
+    margin-top: -5%;
+}
+
+@media only screen and (max-width:768px) {
+    .header_main {
+        font-size: 3rem !important;
+    }
+    .header_main span {
+        font-size: 2rem !important;
+        margin-top: -.5rem !important;
+    }
+    .header_main-1 {
+        top: 50% !important;
+        left: 25% !important;
+    }
+    .header_main-2 {
+        top: 60% !important;
+        left: 10% !important;
+    }
+}
+
+.header_main-1 {
+    top: 30%;
+    left: 40%;
+    color: #fff !important;
+}
+
+.header_main-2 {
+    top: 50%;
+    left: 17%;
+    text-align: right;
+    color: #E81D32 !important;
+}
+
+.header_main-3 {
+    top: 50%;
+    left: 10%;
+    color: #E81D32 !important;
+    text-align: right;
+}
+
+.menu_item {
+    transition: all .5s ease !important;
+}
+
+.menu_item:hover {
+    background: rgba(211, 211, 211, 0.397) !important;
+}
+
+.menu_item-icon {
+    background: linear-gradient(to right, #870000, #190a05) !important;
+    background-clip: text !important;
+    color: transparent;
+}
+
+.menu_item-link {
+    color: #072525 !important;
+    cursor: pointer;
+}
+
+/* //////////////////////////////
+///// Info
+////////////////////////////// */
+
+.info_design {
+    height: 60vh;
+    color: #072525 !important;
+    background: #fff !important;
+    padding: 3rem !important;
+}
+
+.info_design:hover {
+    box-shadow: 0 .2rem .3rem rgba(0, 0, 0, 0.3);
+}
+
+h1.ui.header {
+    color: #072525 !important;
+    font-size: 3.5rem;
+    font-weight: 300;
+    padding: 10% 0 7% 0;
+}
+
+.ui.header+p {
+    text-align: justify;
+    margin-top: -1rem;
+}
+
+.ui.button {
+    background: #E81D32;
+    margin: 10rem;
+    color: #fff;
+    font-weight: 300;
+    transition: all .5s ease-in;
+}
+
+.ui.button:hover {
+    background: #880915;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* //////////////////////////////
+///// Rent
+////////////////////////////// */
+
+.font_rent {
+    padding: 0 10%;
+    text-align: center !important;
+}
+
+.font_main {
+    text-align: center !important;
+    font-size: 3.5rem !important;
+    font-weight: 300 !important;
+    color: #072525;
+}
+
+.font_sub {
+    text-align: center !important;
+    color: #c9c9c9;
+    font-Size: 1.6rem !important;
+}
+
+.font_info {
+    font-size: 1.5rem !important;
+    margin-top: 7rem !important;
+    margin-bottom: -5rem !important;
+}
+
+.procentage {
+    position: relative;
+    font-size: 9.5rem;
+    color: #E81D32;
+}
+
+.procentage span {
+    font-size: 2.5rem;
+    color: #072525;
+}
+
+.item_rent {
+    top: 30rem;
+    left: 0rem;
+    position: absolute;
+}
+
+@media only screen and (max-width: 767px) {
+    .item_rent {
+        top: 0;
+        left: 5rem;
+    }
+}
+
+/* //////////////////////////////
+///// Footer
+////////////////////////////// */
+
+.footer {
+    width: 100%;
+    background: linear-gradient(to left, #283048, #859398);
+    text-align: center;
+    padding: 5rem 10rem !important;
+}
+
+.footer_header {
+    color: #acacac !important;
+    width: 100%;
+    transition: all .5s !important;
+}
+
+.footer_icon {
+    margin: 2rem !important;
+    font-size: 2.5rem !important;
+    color: #acacac !important;
+    transition: all .5s ease !important;
+}
+
+.footer_icon:hover {
+    transform: scale(1.09) !important;
+    color: #cecece !important;
+}
+
+.footer_header:hover {
+    color: #cecece !important;
+}
+
+@media only screen and (max-width: 550px) {
+    .footer {
+        padding: 1rem 2rem !important;
+    }
+    .footer_icon {
+        margin: 0.5 !important;
+        font-size: 1.rem !important;
+    }
+}

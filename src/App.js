@@ -1,25 +1,25 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+
+import { Container } from "semantic-ui-react";
+import HeaderNavbar from "./components/Header";
+import Features from "./components/features/Features";
+import Info from "./components/info/Info";
+import Rent from "./components/rent/Rent";
+import Map from "./components/Map";
+import Footer from "./components/Footer";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <HeaderNavbar />
+        <Features />
+        <Container>
+          <Info />
+          <Rent />
+          <Map />
+        </Container>
+        <Footer />
       </div>
     );
   }
